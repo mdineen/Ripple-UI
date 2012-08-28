@@ -17,7 +17,6 @@ var childProcess = require('child_process'),
     _c = require('./conf'),
     utils = require('./utils'),
     childProcess = require('child_process'),
-    fs = require('fs'),
     jWorkflow = require('jWorkflow');
 
 module.exports = function (prev, baton) {

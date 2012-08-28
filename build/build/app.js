@@ -15,8 +15,6 @@
  */
 var childProcess = require('child_process'),
     fs = require('fs'),
-    path = require('path'),
-    utils = require('./utils'),
     _c = require('./conf');
 
 function create(path) {
