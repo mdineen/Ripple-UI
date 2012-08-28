@@ -34,7 +34,7 @@ function copy(from, to) {
 }
 
 function write(src) {
-    return function (prev, baton) {
+    return function () {
         var css = _c.ASSETS + "ripple.css",
             cssDeploy = _c.DEPLOY + "app/www/ripple.css",
             index = _c.DEPLOY + "app/www/index.html",

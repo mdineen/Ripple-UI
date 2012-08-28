@@ -26,7 +26,7 @@ module.exports = function (prev, baton) {
     function compress(file) {
         cmd.andThen(function (prev, baton) {
             baton.take();
-            childProcess.exec('uglifyjs --overwrite ' + file, function (error, stdout, stdin) {
+            childProcess.exec('uglifyjs --overwrite ' + file, function (error) {
                 if (error) {
                     process.stdout.write("Something bad happened. Is uglify-js installed?");
                     process.stdout.write(error);
